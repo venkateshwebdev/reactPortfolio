@@ -1,0 +1,31 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 90vh;
+    margin: 0 20%;
+    gap: 20%;
+}
+.about-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:20px;
+}
+.about-heading{
+    font-size: 25px;
+    font-weight: 600;
+}
+span{
+    color: #EF383A;
+    font-weight: 600;
+}
+.name{
+    font-weight: 600;
+    font-size: 20px;
+}
+@media screen and (max-width:1080px){
+    *{
+        text-align: left;
+    }
+}

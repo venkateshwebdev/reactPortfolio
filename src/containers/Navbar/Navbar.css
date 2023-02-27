@@ -1,0 +1,79 @@
+.navbar-container{
+    position: fixed;
+    padding: 0%  5%;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: inherit;
+    z-index: 1;
+
+}
+.navbar-elements{
+    display: flex;
+    align-items: center;
+    gap: 9%;
+    justify-content: space-between;
+}
+.navbar-elements .navbar-el{
+    user-select: none;
+}
+.navbar-elements .navbar-el:hover{
+    color:red;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* .navbar-elements a:visited{
+    color:red;
+    font-weight: 600;
+} */
+.wesite-color-change{
+    cursor:pointer;
+    user-select: none;
+}
+
+.navbar-title{
+    display: flex;
+    flex-direction: column;
+}
+.navbar-toggle-menu-container{
+    padding: 30px 0;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    right:2%;
+    align-items: center;
+    background-color: #eeeeee;
+    width: 100%;
+    cursor: pointer;
+}
+.navbar-toggle-menu{
+    display: none;
+}
+.navbar-toggle-menu-container.dark{
+    background-color: #252525;
+}
+.navbar-el a{
+    text-decoration: none;
+    color: inherit;
+}
+.shadow{
+    box-shadow: 0 10px black;
+}
+@media screen and (max-width:1080px) {
+    .navbar-elements{
+        display: none;
+    }
+    .navbar-toggle-menu{
+        display: block;
+    }
+    .navbar-el:hover{
+        color:red;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}

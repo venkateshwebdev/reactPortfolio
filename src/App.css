@@ -27,6 +27,21 @@
 .App-link {
   color: #61dafb;
 }
+.dark{
+  /* background-image: url("./ssscribble.svg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #252525;
+  color:#eeeeee;
+}
+.light{
+  /* background-image: url("./ssscribble.svg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #eeeeee;
+  color:#252525
+}
+
 
 @keyframes App-logo-spin {
   from {

@@ -1,0 +1,85 @@
+.home-container{
+    background-image: url("./HomePageEssentials/ssscribble.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: start;
+    width: 90%;
+    margin:0 5%;
+    /* padding-top: 100px; */
+    height: 100vh;
+
+}
+.light{
+    background: #eeeeee;
+}
+.home-content{
+    margin-top: 22%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    text-align: start;
+}
+.home-wrap{
+    width: 45%;
+    margin: 0 5% 0 15%;
+    margin-top: 10%;
+
+}
+
+
+.home-content h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 54px;
+    letter-spacing: 2.5px;
+}
+.home-content span{
+    color:#EF383A;
+}
+.home-content .greet{
+    font-weight: 900;
+    user-select: none;
+}
+
+img{
+    height: 500px;
+    width: 500px;
+    margin-top: 30%;
+
+}
+
+
+/* .placeHolder{
+    margin: 10% 0 0 10%;
+    height: 400px;
+    width: 200px;
+    background-color: #EF383A;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+    border-bottom-left-radius: 180px;
+} */
+
+/* .inPlaceHolder{
+    height: 350px;
+    width: 350px;
+    background-color: #EF383A;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+}
+.secPlaceHolder{
+    height: 400px;
+    width: 300px;
+    background-color: #EF383A;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+
+} */
+
+
+@media screen and (max-width:600px) {
+    .home-container{
+        height: auto;
+        padding-top: 100px;
+    }
+}
