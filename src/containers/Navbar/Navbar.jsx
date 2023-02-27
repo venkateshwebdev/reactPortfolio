@@ -43,7 +43,7 @@ const Navbar = (props) => {
 
     return ( 
         <div className={`navbar-container ${cxt.navScroll&&"shadow"}`}  >
-            <HeadingUnder name="Portfolio" />
+            <div className='navbar-title'><HeadingUnder name="Portfolio" /></div>
             <div className="navbar-elements">
                 <NavElements />
             </div>

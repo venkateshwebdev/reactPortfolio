@@ -11,7 +11,7 @@ import { useContext } from 'react';
 import ThemeContext from '../../themeContext';
 import HeadingUnder from '../HeadingDesign/HeadingUnder';
 
-const imageArray = [{src:Python,name:"Python"},{src:JavaScript,name:"JavaScript"},{src:React,name:"React"},{src:HTML,name:"HTML"},{src:CSS,name:"CSS"},{src:"",name:"Express Js"},{ src:mongoDB,name:"mongoDB"}]
+const imageArray = [{src:Python,name:"Python"},{src:JavaScript,name:"JavaScript"},{src:React,name:"React"},{src:HTML,name:"HTML"},{src:CSS,name:"CSS"},{src:"",name:"Express.Js"},{ src:mongoDB,name:"mongoDB"}]
 
 const Skills = (props) => {
     const cxt = useContext(ThemeContext)

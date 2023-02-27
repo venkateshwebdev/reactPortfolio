@@ -38,6 +38,7 @@
 .navbar-title{
     display: flex;
     flex-direction: column;
+    margin-top: 50px
 }
 .navbar-toggle-menu-container{
     padding: 30px 0;

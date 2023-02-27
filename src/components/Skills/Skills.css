@@ -3,34 +3,28 @@
     flex-direction: column;
     align-items: flex-start;
     height: 85vh;
-    margin:0 5%;
-    gap: 20%;
+    margin:0 10%;
     /* background-image: url("./SkillsEssentials/ssscribble.svg"); */
     background-repeat: no-repeat;
     background-size: cover;
 }
-.skill-heading{
-    font-size: 25px;
-    font-weight: 600;
-    margin: 0 17%;
-}
 img{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 .skill-image-container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(auto,1fr);
-    row-gap: 30%;
-    column-gap: 20%;
-    align-self: center;
+    column-gap: 80px;
+    row-gap: 40px;
 }
 .skill-wrap{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 20%;
+    width: 90%;
+    margin: 0 5%;
 }
 .light{
     background-image: none;
@@ -41,11 +35,43 @@ img{
 .skill-main{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 25px;
 }
 
 @media screen and (max-width:1080px) {
+    .skill-container{
+        margin: 0 15%;
+    }
+    .skill-image-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    /* .img{
+        height: 70px;
+        width: 70px;
+    } */
+
+}
+@media screen and (max-width:800px) {
     .skill-image-container{
         grid-template-columns: repeat(3,1fr);
     }
 }
+@media screen and (max-width:640px) {
+    .skill-container{
+        margin-top: 120px;
+    }
+    .skill-image-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+        img{
+        height: 40px;
+        width: 40px;
+    }
+    .skill-image-container{
+        column-gap: 30px;
+        row-gap: 15px;
+    }
+}
+

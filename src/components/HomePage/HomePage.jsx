@@ -21,6 +21,7 @@ const Home = (props) => {
             </div>
             <Button name="Know More →"/>
             </div>
+            <div className='img-wrap'></div>
             </div>
             </>
      );
