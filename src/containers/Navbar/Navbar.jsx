@@ -9,15 +9,15 @@ import { NavLink } from "react-router-dom"
 import dark from './NavbarEssentials/dark.png'
 import light from './NavbarEssentials/light.png'
 
-const NavElements = ()=>{
+const NavElements = (props)=>{
     return(
         <>
-                <div className='navbar-el'> <a href="#home"> Home</a></div>
-                <div className='navbar-el'> <a href="#about"> About</a></div>
-                {/* <div className='navbar-el'> <a href=""></a> Resume</div> */}
-                <div className='navbar-el'> <a href="#skills"> Skills</a></div>
-                <div className='navbar-el'> <a href="#projects">Projects</a></div>
-                <div className='navbar-el'> <a href="#contact">Contact</a></div>
+                <div className='navbar-el' onClick={props.work}> <a href="#home" > Home</a></div>
+                <div className='navbar-el' onClick={props.work}> <a href="#about" > About</a></div>
+                {/* <div className='navbar-el' onClick={props.work}> <a href=""></a> Resume</div> */}
+                <div className='navbar-el' onClick={props.work}> <a href="#skills" > Skills</a></div>
+                <div className='navbar-el' onClick={props.work}> <a href="#projects" >Projects</a></div>
+                <div className='navbar-el' onClick={props.work}> <a href="#contact" >Contact</a></div>
         </>
     )
 }
@@ -42,6 +42,9 @@ const Navbar = (props) => {
     const  handleCloseToggle = ()=>{
         setToggle(true);
     }
+    const handletoggle = ()=>{
+        setToggle(false)
+    }
 
     return ( 
         <div className={`navbar-container ${cxt.navScroll&&"shadow"}`}  >
@@ -52,7 +55,7 @@ const Navbar = (props) => {
             <div onClick={changeColor} className="wesite-color-change">{modeIcon? <img src={dark} alt="dark" />:<img src={light} alt="light" />}</div>
             <div className='navbar-toggle-menu'>
                 {toggle?<RiCloseLine color='dark' onClick={handleMenuToggle} />:<RiMenu3Line color ="dark" onClick={handleCloseToggle} />}
-                {toggle&&<div className={`navbar-toggle-menu-container ${cxt.addDiv}`} onClick={setToggle(false)}><NavElements /></div>}
+                {toggle&&<div className={`navbar-toggle-menu-container ${cxt.addDiv}`}><NavElements work={handletoggle} /></div>}
             </div>
         </div>
      );
