@@ -16,7 +16,7 @@ const NavElements = ()=>{
                 <div className='navbar-el'> <a href="#about"> About</a></div>
                 {/* <div className='navbar-el'> <a href=""></a> Resume</div> */}
                 <div className='navbar-el'> <a href="#skills"> Skills</a></div>
-                <div className='navbar-el'> <a href="#projects"> Projects</a></div>
+                <div className='navbar-el'> <a href="#projects">Projects</a></div>
                 <div className='navbar-el'> <a href="#contact">Contact</a></div>
         </>
     )
@@ -52,7 +52,7 @@ const Navbar = (props) => {
             <div onClick={changeColor} className="wesite-color-change">{modeIcon? <img src={dark} alt="dark" />:<img src={light} alt="light" />}</div>
             <div className='navbar-toggle-menu'>
                 {toggle?<RiCloseLine color='dark' onClick={handleMenuToggle} />:<RiMenu3Line color ="dark" onClick={handleCloseToggle} />}
-                {toggle&&<div className={`navbar-toggle-menu-container ${cxt.addDiv}`}><NavElements /></div>}
+                {toggle&&<div className={`navbar-toggle-menu-container ${cxt.addDiv}`} onClick={setToggle(false)}><NavElements /></div>}
             </div>
         </div>
      );

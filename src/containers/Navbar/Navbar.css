@@ -37,6 +37,7 @@
 .wesite-color-change img{
     height: 24px;
     width: 24px;
+    user-select: none;
 }
 
 .navbar-title{
