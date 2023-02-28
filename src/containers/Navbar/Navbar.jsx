@@ -6,6 +6,8 @@ import {RiMenu3Line,RiCloseLine} from 'react-icons/ri'
 import ThemeContext from '../../themeContext';
 import HeadingUnder from '../../components/HeadingDesign/HeadingUnder';
 import { NavLink } from "react-router-dom"
+import dark from './NavbarEssentials/dark.png'
+import light from './NavbarEssentials/light.png'
 
 const NavElements = ()=>{
     return(
@@ -47,7 +49,7 @@ const Navbar = (props) => {
             <div className="navbar-elements">
                 <NavElements />
             </div>
-            <div onClick={changeColor} className="wesite-color-change">{modeIcon?"🌚":"☀️"}</div>
+            <div onClick={changeColor} className="wesite-color-change">{modeIcon? <img src={dark} alt="dark" />:<img src={light} alt="light" />}</div>
             <div className='navbar-toggle-menu'>
                 {toggle?<RiCloseLine color='dark' onClick={handleMenuToggle} />:<RiMenu3Line color ="dark" onClick={handleCloseToggle} />}
                 {toggle&&<div className={`navbar-toggle-menu-container ${cxt.addDiv}`}><NavElements /></div>}

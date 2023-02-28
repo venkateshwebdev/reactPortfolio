@@ -1,5 +1,5 @@
 import './HomePage.css';
-import image from './HomePageEssentials/vector.jpg'
+import image from './HomePageEssentials/image.svg'
 import Button from '../Button/Button';
 import { Parallax } from 'react-parallax';
 import { useCallback, useContext, useState } from 'react';
@@ -19,7 +19,7 @@ const Home = (props) => {
                 <h1>I'm <span>Venkatesh</span> Sirigineedi</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nulla laboriosam culpa ut quas officiis!</p>
             </div>
-            <Button name="Know More →"/>
+            <a href="#about"><Button name="Know More →"/></a>
             </div>
             <div className='img-wrap'></div>
             </div>

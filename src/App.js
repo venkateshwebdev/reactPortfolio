@@ -7,6 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 import Skills from './components/Skills/Skills';
 import ThemeContext from './themeContext';
 import { BrowserRouter } from 'react-router-dom';
+import Projects from './containers/Projects/Projects';
 
 function App() {
   const [addDiv,setAddDiv] = useState("light");
@@ -20,6 +21,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
       
     </div>
     </ThemeContext.Provider>

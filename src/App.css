@@ -54,6 +54,6 @@
   }
 }
 @media screen and (max-width:640px){
-  .App{gap: 100px;}
+  .App{gap: 50px;}
   
 }

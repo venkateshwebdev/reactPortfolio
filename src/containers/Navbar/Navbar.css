@@ -34,6 +34,10 @@
     cursor:pointer;
     user-select: none;
 }
+.wesite-color-change img{
+    height: 24px;
+    width: 24px;
+}
 
 .navbar-title{
     display: flex;

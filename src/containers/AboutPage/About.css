@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    height: 70vh;
+    justify-content: center;
+    height: 100vh;
     margin: 0% 10%;
     gap: 20%;
-    padding-top: 100px;
 }
 .about-wrap{
     display: flex;
@@ -37,6 +37,7 @@ span{
     }
     .about-container{
         text-align: left;
+        padding-top: 100px;
     }
 
 }
