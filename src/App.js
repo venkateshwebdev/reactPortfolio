@@ -8,6 +8,7 @@ import Skills from './components/Skills/Skills';
 import ThemeContext from './themeContext';
 import { BrowserRouter } from 'react-router-dom';
 import Projects from './containers/Projects/Projects';
+import Contact from './containers/Contact/Contact';
 
 function App() {
   const [addDiv,setAddDiv] = useState("light");
@@ -22,6 +23,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
       
     </div>
     </ThemeContext.Provider>

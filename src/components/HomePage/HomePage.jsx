@@ -21,7 +21,7 @@ const Home = (props) => {
             </div>
             <a href="#about"><Button name="Know More →"/></a>
             </div>
-            <div className='img-wrap'></div>
+            {/* <div className='img-wrap'></div> */}
             </div>
             </>
      );

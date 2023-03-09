@@ -5,18 +5,7 @@ const Projects = () => {
         <div className="projects-container" id="projects">    
             <HeadingUnder name="Projects" />
             <div className="project-wrap">
-                <div className="project-item">
-                    <div className="project-item1"></div>
-                    <div className="project-item2"></div>
-                </div>
-                <div className="project-item">
-                    <div className="project-item1"></div>
-                    <div className="project-item2"></div>
-                </div>
-                <div className="project-item">
-                    <div className="project-item1"></div>
-                    <div className="project-item2"></div>
-                </div>
+                <a className="project-a" href="https://venkatesh-project.vercel.app/">Click Here to Check Projects 🔗 </a>
             </div>
         </div>
      );

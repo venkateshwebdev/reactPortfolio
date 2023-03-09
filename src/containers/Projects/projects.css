@@ -20,10 +20,20 @@
     background-color: #252525;
 }
 .project-wrap{
+    align-self: center;
     display: flex;
     gap: 30px;
     align-self: center;
     justify-content: center;
+}
+.project-a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: inherit;
+}
+.project-a:hover{
+    color: red;
 }
 
 @media screen and (max-width:1080px) {
