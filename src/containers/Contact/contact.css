@@ -1,19 +1,23 @@
+.contact-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+}
 .contact-container{
         margin: 0 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding-top: 30px;
-        height: 100vh;
+}
+.cg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact-content{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    gap: 75px;
 }
 .contact-greet{
     font-size: 94px;
@@ -28,19 +32,60 @@ input{
     text-transform: capitalize;
     color: inherit;
     padding: 5px;
+    width: 100%;
 }
 input::placeholder{
     font-family: inherit;
+    font-size: 14px;
+    color: rgb(201, 200, 200);
 }
 form{
     display: flex;
     align-items: baseline;
     gap: 50px;
-   
+    padding-bottom: 100px;
 }
 form button{
     margin-top:10px ;
-    width: 100px;
+    width: 150px;
+}
+.icon{
+    height: 14px;
+    width: 14px;
+}
+.icon:hover{
+    height: 18px;
+    width: 18px;
+    color: inherit;
+}
+.si{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+
+}
+.sn{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+.foo-social{
+    padding: 0 20% ;
+    padding-top: 50px ;
+    height: 100px;
+    background:rgba(255, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    box-shadow: -2px 0 20px rgba(255, 0, 0, 0.1);
+}
+.contact-greet-sub{
+    color: grey;
+
+    font-size: 12px;
 }
 /* .contact-footer{
     background-color: #252525;
@@ -57,5 +102,23 @@ form button{
     }
     form{
         flex-direction: column;
+        padding-bottom: 50px;
+        align-items: center;
+        gap: 10px;
     }
+    .foo-social{
+        padding: 0;
+        padding-top: 30px
+         ;}
+    .contact-wrap{
+        padding-top:30px ;
+    }
+    .si{
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    .sn{
+        width: 50%;
+    }
+    
 }

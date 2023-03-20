@@ -1,4 +1,5 @@
 .projects-container{
+    padding-top: 100px;
     margin: 0 10%;
     display: flex;
     flex-direction: column;
@@ -20,11 +21,12 @@
     background-color: #252525;
 }
 .project-wrap{
-    align-self: center;
     display: flex;
+    padding-top: 50px;
     gap: 30px;
-    align-self: center;
+    align-items: center;
     justify-content: center;
+    align-self: center;
 }
 .project-a{
     text-decoration: none;
@@ -39,9 +41,6 @@
 @media screen and (max-width:1080px) {
     .projects-container{
         margin: 0 15%;
-    }
-    .project-wrap{
-        flex-direction: column;
     }
 }
 @media screen and (max-width:640px) {
