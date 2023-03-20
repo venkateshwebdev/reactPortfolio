@@ -46,7 +46,7 @@ img{
 
 @media screen and (max-width:1080px) {
     .skill-container{
-        margin: 0 15%;
+        margin: 0 10%;
     }
     .skill-image-container{
         grid-template-columns: repeat(4,1fr);
