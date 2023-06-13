@@ -17,11 +17,10 @@ const Home = (props) => {
             <div className="home-content">
                 <p className='greet'>━━ HELLO</p>
                 <h1>I'm <span>Venkatesh</span> Sirigineedi</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nulla laboriosam culpa ut quas officiis!</p>
+                <div className='homeSkill'><p>I'm a</p><div className='homeSkillSubs'><span>ReactJs Developer.</span><span>NextJs Developer.</span><span>Full Stack Developer.</span><span>Engineering Graduate.</span></div> </div>
+                <a href="#about"><Button name="Know More →"/></a>
             </div>
-            <a href="#about"><Button name="Know More →"/></a>
             </div>
-            {/* <div className='img-wrap'></div> */}
             </div>
             </>
      );

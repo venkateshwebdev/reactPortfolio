@@ -4,13 +4,17 @@
     align-items: flex-end;
     justify-content: center;
     height: 100vh;
-    margin: 0% 10%;
+    padding: 0% 10%;
     gap: 20%;
+    background-color: inherit;
+    opacity: 1;
+    z-index: 1000;
+    text-align: left;
 }
 .about-wrap{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap:20px;
 }
 .about-heading{
@@ -28,7 +32,7 @@ span{
 @media screen and (max-width:1080px){
         
     .about-container{
-        margin: 0 10%;
+        padding: 0 10%;
     }
 }
 @media screen and (max-width:640px){

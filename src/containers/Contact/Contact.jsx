@@ -32,7 +32,7 @@ const Contact = () => {
             </div>
             <div className='sn'>@venkateshsirigineedi</div>
 
-                </div>
+        </div>
         </div>
      );
 }

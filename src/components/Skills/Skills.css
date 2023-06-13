@@ -2,12 +2,25 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin:0 10%;
+    /* padding:0 10%; */
     height: 100vh;
-    /* background-image: url("./SkillsEssentials/ssscribble.svg"); */
+    z-index: 1000;
+}
+.skill-container::after{
+    content: " ";
+    background-image:url("./thor.jpg") ;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
+    background-size: contain;
+    opacity: 0.4;
+    z-index: -5;
+    display: flex;
+    background-position: 50%;
+    /* filter:brightness(3.0) contrast(1.8); */
+
 }
 img{
     height: 80px;
@@ -45,9 +58,6 @@ img{
 }
 
 @media screen and (max-width:1080px) {
-    .skill-container{
-        margin: 0 10%;
-    }
     .skill-image-container{
         grid-template-columns: repeat(4,1fr);
     }

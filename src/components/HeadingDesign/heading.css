@@ -17,4 +17,5 @@
 .cont{
     width: auto;
     display: flex;
+    padding: 0 10%;
 }
