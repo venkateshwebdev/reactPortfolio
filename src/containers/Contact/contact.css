@@ -3,25 +3,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 100px;
     z-index: 1000;
+    margin-top: 2%;
 }
 .contact-container{
-        margin: 0 10%;
-
+        margin: 2% 10%;
 }
 .contact-wrap::after{
     content: " ";
-    background:url("https://th.bing.com/th/id/OIG.gSLlFNw.8A_D52BJb8cA?pid=ImgGn") ;
+    background:url("../../components/HomePage/hero.png") ;
     height: 100%;
     width: 100vw;
     position: absolute;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.5;
     z-index: -5;
-
 }
 .cg{
     display: flex;
@@ -53,13 +51,13 @@ input{
 input::placeholder{
     font-family: inherit;
     font-size: 14px;
-    color: rgb(201, 200, 200);
+    /* color: rgb(201, 200, 200); */
 }
 form{
     display: flex;
     align-items: baseline;
     gap: 50px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 form button{
     margin-top:10px ;
@@ -91,12 +89,14 @@ form button{
     /* padding: 0 20% ; */
     padding-top: 50px ;
     height: 100px;
-    background:rgba(255, 0, 0, 0.1);
+    background-color: inherit;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     font-size: 14px;
-    box-shadow: -2px 0 20px rgba(255, 0, 0, 0.1);
+    /* box-shadow: -2px 0 20px rgba(255, 0, 0, 0.1); */
+    /* z-index: 100; */
 }
 .contact-greet-sub{
     color: grey;
@@ -109,7 +109,7 @@ form button{
 @media screen and (max-width:1080px){
         
     .contact-container{
-        margin: 0 10%;
+        margin: 2% 10%
     }
 }
 @media screen and (max-width:640px){
@@ -118,16 +118,16 @@ form button{
     }
     form{
         flex-direction: column;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
         align-items: center;
         gap: 10px;
     }
     .foo-social{
         padding: 0;
-        padding-top: 30px
+        /* padding-top: 30px */
          ;}
     .contact-wrap{
-        padding-top:30px ;
+        /* padding-top:30px ; */
     }
     .si{
         justify-content: space-evenly;
@@ -135,6 +135,9 @@ form button{
     }
     .sn{
         width: 50%;
+    }
+    .contact-wrap::after{
+        background-position: -400px 50px;
     }
     
 }

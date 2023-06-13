@@ -2,14 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
-    height: 100vh;
-    padding: 0% 10%;
+    justify-content: space-between;
+    /* height: 100vh; */
+    padding: 10%;
     gap: 20%;
     background-color: inherit;
     opacity: 1;
-    z-index: 1000;
+    /* z-index: 1000; */
     text-align: left;
+    gap:5%
 }
 .about-wrap{
     display: flex;
@@ -37,11 +38,11 @@ span{
 }
 @media screen and (max-width:640px){
     .name{
-        align-self: center;
+        /* align-self: center; */
     }
     .about-container{
-        text-align: left;
-        padding-top: 50px;
+        /* text-align: left;
+        padding-top: 50px; */
     }
 
 }

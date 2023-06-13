@@ -8,14 +8,26 @@
     align-items: center;
     font-size: 20px;
     font-weight: 500;
-    background-color: inherit;
     z-index: 1000000;
+    /* box-shadow: 1px 2px 5px; */
+    /* background-color:black;
+    background-image: url(../../components/HomePage/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(2.8); */
+}
+.navbar-container::after{
+    content: " ";
+    /* background-image: url(../../components/HomePage/hero.png); */
+    background-color: red;
+    position: fixed;
 }
 .navbar-elements{
     display: flex;
     align-items: center;
     gap: 9%;
     justify-content: space-between;
+    font-weight: 900;
 }
 .navbar-elements .navbar-el{
     user-select: none;

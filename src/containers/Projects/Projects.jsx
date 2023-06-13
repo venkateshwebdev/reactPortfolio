@@ -5,7 +5,8 @@ const Projects = () => {
         <div className="projects-container" id="projects">    
             <HeadingUnder name="Projects" />
             <div className="project-wrap">
-                <a className="project-a" href="https://venkatesh-project.vercel.app/">Click Here to Check Projects 🔗 </a>
+                {/* <a className="project-a" href="https://venkatesh-project.vercel.app/">Click Here to Check Projects 🔗 </a> */}
+
             </div>
         </div>
      );
