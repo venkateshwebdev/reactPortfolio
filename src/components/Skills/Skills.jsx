@@ -1,5 +1,6 @@
 import './Skills.css'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import Python from './SkillsEssentials/python.png';
 import JavaScript from './SkillsEssentials/js.png'
 import React from './SkillsEssentials/logo192.png'
@@ -11,7 +12,7 @@ import next from "./SkillsEssentials/next-js.svg"
 import nodejs from "./SkillsEssentials/nodejs.png"
 import firebase from "./SkillsEssentials/firebase.png"
 import { SiFirebase } from 'react-icons/si';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import ThemeContext from '../../themeContext';
 import HeadingUnder from '../HeadingDesign/HeadingUnder';
 import {github} from './SkillsEssentials/githublogo.png'
@@ -21,6 +22,9 @@ import { SiGithub } from 'react-icons/si';
 const imageArray = [{src:React,name:"ReactJS"},{ src:<SiNextdotjs className='sicon'/>,name:"NextJS",icon:true},{src:JavaScript,name:"JavaScript"},{src:nodejs,name:"Node.Js"},{src:<SiExpress className='sicon'/>,name:"Express.Js",icon:true},{src:Python,name:"Python"},{src:HTML,name:"HTML"},{src:CSS,name:"CSS"},{ src:mongoDB,name:"mongoDB"},{src:firebase,name:"Firebase"},{src:<SiGithub className='sicon'/>,name:"Github",icon:true}]
 
 const Skills = (props) => {
+    useEffect(()=>{
+        AOS.init({duration:2000})
+    },[])
     const cxt = useContext(ThemeContext)
     const createSkill =(img)=>{
         return(
@@ -36,7 +40,7 @@ const Skills = (props) => {
             <HeadingUnder name=" ` Skills ` " />
         
         <div className="skill-wrap">
-        <div className="skill-image-container">
+        <div className="skill-image-container" data-aos="zoom-in">
             {imageArray.map((e)=>(createSkill(e)))}
         </div>
         </div>

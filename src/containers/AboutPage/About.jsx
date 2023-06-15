@@ -1,13 +1,19 @@
+import { useEffect } from 'react';
 import Button from '../../components/Button/Button';
 import HeadingUnder from '../../components/HeadingDesign/HeadingUnder';
 import './About.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 const About = () => {
     const right = '< ';
     const left = ' />';
+    useEffect(()=>{
+        AOS.init({duration:2000})
+    },[])
     return ( 
         <div className="about-container" id='about'>
             <HeadingUnder name="` About ` " />
-            <div className='about-wrap'>
+            <div className='about-wrap' data-aos="zoom-in">
             <div className='name'>Keerthi Venkatesh Sirigineedi</div>
             <div className='content'>I am a <span>Student</span> graduated in Electronics and Communiaction Engineering.</div>
             <div className='content'>I am very much intrested in {right}<span>WEB DEVELOPMENT</span>{left}<span> && SOFTWARE TECHOLOGIES</span>.</div>
