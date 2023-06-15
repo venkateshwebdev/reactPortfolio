@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './App.css';
 import Home from './components/HomePage/HomePage';
-import Navbar from './containers/Navbar/Navbar';
+import Navbar, { NavElements } from './containers/Navbar/Navbar';
 import About from './containers/AboutPage/About';
 import { Parallax } from 'react-scroll-parallax';
 import Skills from './components/Skills/Skills';
 import ThemeContext from './themeContext';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, useLocation, useParams, useResolvedPath } from 'react-router-dom';
 import Projects from './containers/Projects/Projects';
 import Contact from './containers/Contact/Contact';
 
@@ -19,12 +19,12 @@ function App() {
     <ThemeContext.Provider value={{addDiv,setAddDiv,navScroll,setNavScroll}}>
     <div className={`App ${addDiv}`}>
       <Navbar  />
+      {/* <NavElements /> */}
       <Home />
       <About />
       <Skills />
       <Projects />
       <Contact />
-      
     </div>
     </ThemeContext.Provider>
     </BrowserRouter>

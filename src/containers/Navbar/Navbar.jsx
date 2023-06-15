@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom"
 import dark from './NavbarEssentials/dark.png'
 import light from './NavbarEssentials/light.png'
 
-const NavElements = (props)=>{
+export const NavElements = (props)=>{
     return(
         <>
                 <div className='navbar-el' onClick={props.work}> <a href="#home" > Home</a></div>

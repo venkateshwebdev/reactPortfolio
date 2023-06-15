@@ -22,7 +22,7 @@
     /* filter:brightness(3.0) contrast(1.8); */
 /* } */
 
-img{
+.sicon{
     height: 80px;
     width: 80px;
 }
@@ -80,7 +80,7 @@ img{
     .skill-image-container{
         grid-template-columns: repeat(3,1fr);
     }
-        img{
+        .sicon{
         height: 40px;
         width: 40px;
     }

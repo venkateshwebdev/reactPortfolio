@@ -14,17 +14,18 @@ import { SiFirebase } from 'react-icons/si';
 import { useContext } from 'react';
 import ThemeContext from '../../themeContext';
 import HeadingUnder from '../HeadingDesign/HeadingUnder';
+import {github} from './SkillsEssentials/githublogo.png'
 import { SiExpress } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
-const imageArray = [{src:React,name:"ReactJS"},{ src:next,name:"NextJS"},{src:JavaScript,name:"JavaScript"},{src:nodejs,name:"Node.Js"},{src:EXPRESS,name:"Express.Js"},{src:Python,name:"Python"},{src:HTML,name:"HTML"},{src:CSS,name:"CSS"},{ src:mongoDB,name:"mongoDB"},{src:firebase,name:"Firebase"}]
+import { SiGithub } from 'react-icons/si';
+const imageArray = [{src:React,name:"ReactJS"},{ src:<SiNextdotjs className='sicon'/>,name:"NextJS",icon:true},{src:JavaScript,name:"JavaScript"},{src:nodejs,name:"Node.Js"},{src:<SiExpress className='sicon'/>,name:"Express.Js",icon:true},{src:Python,name:"Python"},{src:HTML,name:"HTML"},{src:CSS,name:"CSS"},{ src:mongoDB,name:"mongoDB"},{src:firebase,name:"Firebase"},{src:<SiGithub className='sicon'/>,name:"Github",icon:true}]
 
 const Skills = (props) => {
     const cxt = useContext(ThemeContext)
     const createSkill =(img)=>{
         return(
             <div className="skill-main">
-                {img.src!=<SiNextdotjs/>?<img src={img.src} alt="" />:<SiNextdotjs />}
-                {/* <SiNextdotjs /> */}
+                {img.icon?img.src:<img className='sicon' src={img.src} alt="" />}
                 <p>{img.name}</p>
             </div>
         )
