@@ -2,10 +2,22 @@ import './HomePage.css';
 import image from './HomePageEssentials/image.svg'
 import Button from '../Button/Button';
 import { Parallax } from 'react-parallax';
-import { useCallback, useContext, useState } from 'react';
+import { useCallback, useContext, useState,useEffect } from 'react';
 import ThemeContext from '../../themeContext';
 const Home = (props) => {
     const cxt = useContext(ThemeContext);
+    useEffect(() => {
+        const handleScroll = () => {
+          const parallaxText = document.getElementById('parallax-text');
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          parallaxText.style.transform = `translateY(${scrollTop * 0.5}px)`;
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
     const handleScroll = (e)=>{
         cxt.setNavScroll(true);
         console.log(e.target)
@@ -14,9 +26,9 @@ const Home = (props) => {
         <>
         <div onScroll={handleScroll} className={`home-container ${cxt.addDiv}`}>
             <div className="home-wrap" id='home'>
-            <div className="home-content">
+            <div className="home-content" >
                 <p className='greet'>━━ HELLO</p>
-                <h1>I'm <span>Venkatesh</span> Sirigineedi</h1>
+                <h1 >I'm <span>Venkatesh</span> Sirigineedi</h1>
                 <div className='homeSkill'><p>I'm a</p><div className='homeSkillSubs'><span>ReactJs Developer.</span><span>NextJs Developer.</span><span>Full Stack Developer.</span><span>Engineering Graduate.</span></div> </div>
                 <a href="#about"><Button name="Know More →"/></a>
             </div>

@@ -19,17 +19,17 @@ import {github} from './SkillsEssentials/githublogo.png'
 import { SiExpress } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
 import { SiGithub } from 'react-icons/si';
-const imageArray = [{src:React,name:"ReactJS"},{ src:<SiNextdotjs className='sicon'/>,name:"NextJS",icon:true},{src:JavaScript,name:"JavaScript"},{src:nodejs,name:"Node.Js"},{src:<SiExpress className='sicon'/>,name:"Express.Js",icon:true},{src:Python,name:"Python"},{src:HTML,name:"HTML"},{src:CSS,name:"CSS"},{ src:mongoDB,name:"mongoDB"},{src:firebase,name:"Firebase"},{src:<SiGithub className='sicon'/>,name:"Github",icon:true}]
+const imageArray = [{src:React,name:"ReactJS"},{ src:<SiNextdotjs className='sicon hover:animate-spin'/>,name:"NextJS",icon:true},{src:JavaScript,name:"JavaScript"},{src:nodejs,name:"Node.Js"},{src:<SiExpress className='sicon hover:animate-spin'/>,name:"Express.Js",icon:true},{src:Python,name:"Python"},{src:HTML,name:"HTML"},{src:CSS,name:"CSS"},{ src:mongoDB,name:"mongoDB"},{src:firebase,name:"Firebase"},{src:<SiGithub className='sicon hover:animate-spin'/>,name:"Github",icon:true}]
 
 const Skills = (props) => {
     useEffect(()=>{
-        AOS.init({duration:2000})
+        AOS.init({duration:1000})
     },[])
     const cxt = useContext(ThemeContext)
     const createSkill =(img)=>{
         return(
-            <div className="skill-main">
-                {img.icon?img.src:<img className='sicon' src={img.src} alt="" />}
+            <div className="skill-main" >
+                {img.icon?img.src:<img className='sicon hover:animate-spin' src={img.src} alt="" />}
                 <p>{img.name}</p>
             </div>
         )
@@ -40,7 +40,7 @@ const Skills = (props) => {
             <HeadingUnder name=" ` Skills ` " />
         
         <div className="skill-wrap">
-        <div className="skill-image-container" data-aos="zoom-in">
+        <div className="skill-image-container" data-aos="slide-up">
             {imageArray.map((e)=>(createSkill(e)))}
         </div>
         </div>
