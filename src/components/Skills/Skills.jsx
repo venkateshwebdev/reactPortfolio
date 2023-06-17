@@ -40,7 +40,7 @@ const Skills = (props) => {
             <HeadingUnder name=" ` Skills ` " />
         
         <div className="skill-wrap">
-        <div className="skill-image-container" data-aos="slide-up">
+        <div className="skill-image-container" data-aos="fade-up">
             {imageArray.map((e)=>(createSkill(e)))}
         </div>
         </div>

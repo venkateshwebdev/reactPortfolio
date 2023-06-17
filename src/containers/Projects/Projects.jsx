@@ -5,21 +5,19 @@ import "aos/dist/aos.css"
 import { useEffect } from "react";
 import fash from './projectThumb.png'
 import todo from './projectThumb2.png'
+import stream from './projectThumb3.png'
+import {Link} from "react-router-dom"
 const Card = (props)=>{
     return(
-        <div className="projectcard"   data-AOS="flip-left">
-        <div className="dynamic"></div>
-        {/* <iframe className="piframe" src={props.url} scrolling="no"  name='iframe' title='This is my video'></iframe> */}
-        {/* <img className="piframe" src={props.imageSrc} height={"100px"} /> */}
-        {/* <iframe src={props.url} height={"500px"} width={"300px"} scrolling="no" name='iframe' title='This is my video'></iframe> */}
-        <div className="projectcardcontent">
-        <h1>{props.title}</h1>
-        <p>{props.des}</p>
-        <h3>Tech Stach Used : -<span>{props.techStack}</span></h3>
-        <div><a style={{color:"inherit"}} href={props.url}>Go to website 🔗</a></div>
+        <div className={`projectcard  ${props.align}`}>
+            <div className={`project-content`}>
+                <div className="text-[92px] font-bold opacity-30">0{props.num}</div>
+                <div className="text-[54px] font-bold">{props.title}</div>
+                <div className="text-sm">{props.des}</div>
+                <div>Tech Stack : {props.tech}</div>
+            </div>
+            <Link to={props.url}><div className="project-image" data-aos="slide-up"><img src={props.img}/></div></Link>
         </div>
-
-    </div>
     )
 }
 const Projects = () => {
@@ -30,11 +28,9 @@ const Projects = () => {
         <div className="projects-container" id="projects">
             <HeadingUnder name="Projects" />
             <div className="project-wrap">
-                <div className="projectcardcontainer">
-                    <Card  url="https://fashion-ed.vercel.app/" title={"Fashioned"} techStack={"Nextjs , React , Mongoose"} des={"A fun website where you can buy stuff, share ideas, and write stories."} imageSrc={fash} />
-                    <Card url="https://streamzz.vercel.app/" title={"StreamZ"} techStack={"React"} des={"Watch and save your favorite videos on this YouTube-like website."} />
-                    <Card url="https://todo-venkateshwebdev.vercel.app/" title={"Todo"} techStack={"React"} des={"Organize your Tasks 'WHENEVER,WHEREVER' ."} imageSrc={todo} />
-                </div>
+            <Card num="1" title="Fashion-ed" des="Shop, Discover, Blog: Fashion Emporium." tech="NextJS,ReactJS" img={fash} url={"https://fashion-ed.vercel.app"} />
+            <Card num="2" title="ToDo" des="Organize your Tasks 'WHENEVER,WHEREVER' ." tech="ReactJS" align="reverse" img={todo} url={"https://todo-venkateshwebdev.vercel.app"} />
+            <Card num="3" title="streamZ" des="Watch and save your favorite videos on this YouTube-like website." tech="ReactJS" img={stream} url={"https://streamzz.vercel.app"} />
             </div>
         </div>
      );

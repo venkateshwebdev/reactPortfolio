@@ -1,80 +1,91 @@
 .projects-container{
-    padding: 5% 10%;
+    padding: 5% 2%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
+    /* justify-content: center; */
     background:inherit;
     z-index: 100;
 }
-
 .project-wrap{
     display: flex;
-    padding-top: 50px;
-    gap: 30px;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    align-self: center;
-    height: 100%;
-}
-.piframe{
-    height: 100%;
+    justify-content: space-between;
     width: 100%;
-    overflow: hidden;
-    border-radius: 20px;
-    align-self: flex-start;
+    gap:5%
 }
 .projectcard{
     display: flex;
-    align-items: center;
-    gap:10%;
-    padding: 10px;
-    border:5px solid;
-    border-radius: 30px;
-    height: 300px;
+    align-items: flex-end;
+    justify-content: flex-end;
     width: 100%;
-    /* background-color: rgba(165, 42, 42, 0.112); */
+    text-align: left;
+    gap:5%;
+    /* border: 2px solid; */
+    position: relative;
 }
-.projectcardcontainer{
-    display: grid;
-    /* flex-direction: column; */
-    place-items: center;
-    grid-template-columns: repeat(2,1fr);
-    gap: 50px;
-}
-.projectcardcontent{
+.project-content{
+    width: 20%;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    justify-content: space-evenly;
+    gap:20px;
+    position:relative;
+    top:-100px
+}
+.project-image{
+    /* width: 65%; */
+    /* border: 2px solid; */
     /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.dynamic{
-    display: none;
+.project-image > img{
+    /* height: 100%; */
+    width: 100%;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid;
 }
+.reverse{
+    flex-direction: row-reverse;
+}
+/* .project-image::before{
+    content: " Go to Website 🔗";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+} */
+
 @media screen and (max-width:1080px) {
     .projects-container{
-        margin: 5% 5%;
-    }
-    .projectcardcontainer{
-        grid-template-columns: repeat(1,1fr);
+        padding: 5%;
+        content: "Go to website 🔗";
     }
     .projectcard{
         flex-direction: column;
-        height: 600px;
-        gap:20px
+        padding-bottom: 30px;
+        border-bottom: 3px dashed;
+        border-radius: 30px;
     }
-    .dynamic{
-        display: flex;
-        width: 50%;
-        background-color: black;
-        height: 40px;
-        align-self: center;
-        border-radius: 20px;
+
+    .project-wrap{
+        gap: 100px;
     }
-}
-@media screen and (max-width:640px) {
-    .projects-container{
-        padding-top: 50px;
+    .reverse{
+        flex: none;
+    }
+    .project-image{
+        width: 100%;
+    }
+    .project-content{
+        width: 100%;
+        position: static;
+    }
+    .project-image > img{
+        height: 50%;
     }
 }

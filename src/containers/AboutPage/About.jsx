@@ -7,13 +7,13 @@ import 'aos/dist/aos.css'
 const About = () => {
     const right = '< ';
     const left = ' />';
-    useEffect(()=>{
-        AOS.init({duration:2000})
-    },[])
+    // useEffect(()=>{
+    //     AOS.init({duration:2000})
+    // },[])
     return ( 
         <div className="about-container" id='about'>
             <HeadingUnder name="` About ` " />
-            <div className='about-wrap' data-aos="slide-up" >
+            <div className='about-wrap' >
             <div className='name'>Keerthi Venkatesh Sirigineedi</div>
             <div className='content'>I am a <span>Student</span> graduated in Electronics and Communiaction Engineering.</div>
             <div className='content'>I am very much intrested in {right}<span>WEB DEVELOPMENT</span>{left}<span> && SOFTWARE TECHOLOGIES</span>.</div>
