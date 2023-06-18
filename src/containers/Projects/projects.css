@@ -6,6 +6,7 @@
     /* justify-content: center; */
     background:inherit;
     z-index: 100;
+    overflow: hidden;
 }
 .project-wrap{
     display: flex;
@@ -18,7 +19,7 @@
 .projectcard{
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     text-align: left;
     gap:5%;
@@ -50,6 +51,10 @@
 }
 .reverse{
     flex-direction: row-reverse;
+}
+.project-image>img:hover{
+    /* opacity: 0.8; */
+    border-color: red;
 }
 /* .project-image::before{
     content: " Go to Website 🔗";

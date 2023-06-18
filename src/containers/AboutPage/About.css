@@ -1,9 +1,9 @@
 .about-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: space-between;
-    padding: 10%;
+    align-items: flex-end;
+    padding: 10% 5%;
     gap: 20%;
     background-color: inherit;
     opacity: 1;
@@ -14,10 +14,10 @@
 .about-wrap{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     gap:20px;
     width: 100%;
+    padding: 0 5%;
     /* height: 100vh; */
     /* transition: all 5s linear; */
 }

@@ -12,7 +12,7 @@ const Card = (props)=>{
         <div className={`projectcard  ${props.align}`}>
             <div className={`project-content`}>
                 <div className="text-[92px] font-bold opacity-30">0{props.num}</div>
-                <div className="text-[54px] font-bold">{props.title}</div>
+                <div className="text-[48px] font-bold">{props.title}</div>
                 <div className="text-sm">{props.des}</div>
                 <div>Tech Stack : {props.tech}</div>
             </div>
@@ -22,15 +22,15 @@ const Card = (props)=>{
 }
 const Projects = () => {
     useEffect(()=>{
-        AOS.init({duration:2000})
+        AOS.init({duration:1500})
     },[])
     return ( 
         <div className="projects-container" id="projects">
             <HeadingUnder name="Projects" />
             <div className="project-wrap">
-            <Card num="1" title="Fashion-ed" des="Shop, Discover, Blog: Fashion Emporium." tech="NextJS,ReactJS" img={fash} url={"https://fashion-ed.vercel.app"} />
-            <Card num="2" title="ToDo" des="Organize your Tasks 'WHENEVER,WHEREVER' ." tech="ReactJS" align="reverse" img={todo} url={"https://todo-venkateshwebdev.vercel.app"} />
-            <Card num="3" title="streamZ" des="Watch and save your favorite videos on this YouTube-like website." tech="ReactJS" img={stream} url={"https://streamzz.vercel.app"} />
+            <Card num="1" title="streamZ" des="Watch and save your favorite videos on this YouTube-like website." tech="ReactJS" img={stream} url={"https://streamzz.vercel.app"} />
+            <Card num="2" title="Fashion-ed" des="Style, Shop, Blog: Fashion Hub for Trendsetters and Enthusiasts." align="reverse" tech="NextJS,ReactJS" img={fash} url={"https://fashion-ed.vercel.app"} />
+            <Card num="3" title="ToDo" des="Organize your Tasks 'WHENEVER,WHEREVER' ." tech="ReactJS"  img={todo} url={"https://todo-venkateshwebdev.vercel.app"} />
             </div>
         </div>
      );

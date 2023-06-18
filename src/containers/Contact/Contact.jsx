@@ -5,6 +5,20 @@ import {AiFillInstagram} from "react-icons/ai"
 import {FaLinkedinIn,FaFacebookF, FaGithub} from "react-icons/fa"
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+export const SocialBar = ()=>{
+    return(
+        <>
+        <Link to="mailto:venkateshsirigineedi32@gmail.com"><SiGmail className='icon'/></Link>
+         <Link to="https://www.linkedin.com/in/venkatesh-sirigineedi-a84078263"><FaLinkedinIn className='icon'/></Link>
+          {/* <FaFacebookF className='icon'/> */}
+          {/* <AiFillInstagram className='icon'/> */}
+          <Link to="https://github.com/venkateshwebdev"><FaGithub className='icon'/></Link>
+      </>
+    )
+}
 const Contact = () => {
     const [textbody,setTextBody] = useState("")
     const handleSubmit = (e)=>{
@@ -13,7 +27,6 @@ const Contact = () => {
     return ( 
         <div className="contact-wrap">
         <div className="contact-container" id='contact'>
-            <HeadingUnder name="Contact" />
             <div className='contact-content'>
                 <div className='cg'>
                 <div className='contact-greet'>Let's Connect!</div>
@@ -27,15 +40,8 @@ const Contact = () => {
             </div>
         </div>
         <div className='foo-social'>
-            <div className='si'>
-              <Link to="mailto:venkateshsirigineedi32@gmail.com"><SiGmail className='icon'/></Link>
-               <Link to="https://www.linkedin.com/in/venkatesh-sirigineedi-a84078263"><FaLinkedinIn className='icon'/></Link>
-                {/* <FaFacebookF className='icon'/> */}
-                {/* <AiFillInstagram className='icon'/> */}
-                <Link to="https://github.com/venkateshwebdev"><FaGithub className='icon'/></Link>
-            </div>
+            <div className='si'><SocialBar /></div>
             <div className='sn'>@venkateshsirigineedi</div>
-
         </div>
         </div>
      );
