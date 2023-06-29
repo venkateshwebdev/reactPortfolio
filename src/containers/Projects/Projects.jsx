@@ -30,7 +30,7 @@ const Projects = () => {
             <HeadingUnder name="Projects" />
             <div className="project-wrap">
             <Card num="1" title="StreamZ" des="Watch and save your favorite videos on this YouTube-like website." tech="ReactJS" img={stream} url={"https://streamzz.vercel.app"} />
-            <Card num="2" title="SneakerSpot" des="Upgrade your sneaker game with our premier online store for stylish, high-quality sneakers from top brands like Puma, Nike, and Adidas." tech="ReactJS"  img={sneaker} url={"https://sneakerspots.vercel.app"} />
+            <Card num="2" title="SneakerSpot" des="Upgrade your sneaker game with our premier online store for stylish, high-quality sneakers from top brands like Puma, Nike, and Adidas." tech="ReactJS, ExpressJS ,mongoDB"  img={sneaker} url={"https://sneakerspots.vercel.app"} />
             <Card num="3" title="Fashion-ed" des="Style, Shop, Blog: Fashion Hub for Trendsetters and Enthusiasts." align="reverse" tech="NextJS,ReactJS" img={fash} url={"https://fashion-ed.vercel.app"} />
             <Card num="4" title="ToDo" des="Organize your Tasks 'WHENEVER,WHEREVER' ." tech="ReactJS"  img={todo} url={"https://todo-venkateshwebdev.vercel.app"} />
             </div>
