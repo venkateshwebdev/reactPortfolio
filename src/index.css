@@ -15,9 +15,8 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: red; */
-  color:black;
   overflow-x: hidden;
+  color: #252525;
 }
 
 code {

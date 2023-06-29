@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import fash from './projectThumb.png'
 import todo from './projectThumb2.png'
 import stream from './projectThumb3.png'
+import sneaker from './projectThumb1.png'
 import {Link} from "react-router-dom"
 const Card = (props)=>{
     return(
@@ -28,9 +29,10 @@ const Projects = () => {
         <div className="projects-container" id="projects">
             <HeadingUnder name="Projects" />
             <div className="project-wrap">
-            <Card num="1" title="streamZ" des="Watch and save your favorite videos on this YouTube-like website." tech="ReactJS" img={stream} url={"https://streamzz.vercel.app"} />
-            <Card num="2" title="Fashion-ed" des="Style, Shop, Blog: Fashion Hub for Trendsetters and Enthusiasts." align="reverse" tech="NextJS,ReactJS" img={fash} url={"https://fashion-ed.vercel.app"} />
-            <Card num="3" title="ToDo" des="Organize your Tasks 'WHENEVER,WHEREVER' ." tech="ReactJS"  img={todo} url={"https://todo-venkateshwebdev.vercel.app"} />
+            <Card num="1" title="StreamZ" des="Watch and save your favorite videos on this YouTube-like website." tech="ReactJS" img={stream} url={"https://streamzz.vercel.app"} />
+            <Card num="2" title="SneakerSpot" des="Upgrade your sneaker game with our premier online store for stylish, high-quality sneakers from top brands like Puma, Nike, and Adidas." tech="ReactJS"  img={sneaker} url={"https://sneakerspots.vercel.app"} />
+            <Card num="3" title="Fashion-ed" des="Style, Shop, Blog: Fashion Hub for Trendsetters and Enthusiasts." align="reverse" tech="NextJS,ReactJS" img={fash} url={"https://fashion-ed.vercel.app"} />
+            <Card num="4" title="ToDo" des="Organize your Tasks 'WHENEVER,WHEREVER' ." tech="ReactJS"  img={todo} url={"https://todo-venkateshwebdev.vercel.app"} />
             </div>
         </div>
      );

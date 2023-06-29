@@ -1,4 +1,4 @@
-import { useCallback, useContext, useState } from 'react';
+import { useCallback, useContext, useState,useEffect } from 'react';
 import About from '../AboutPage/About';
 import Home from '../../components/HomePage/HomePage';
 import './Navbar.css'
@@ -47,7 +47,7 @@ const Navbar = (props) => {
     }
 
     return ( 
-        <div className={`navbar-container ${cxt.navScroll&&"shadow"}`}  >
+        <div className={`navbar-container`}  >
             <div className='navbar-title'><HeadingUnder name="Portfolio" /></div>
             <div className="navbar-elements">
                 <NavElements />
